@@ -14,6 +14,11 @@ final class RoutesPermissionProvider implements RoutesPermissionProviderInterfac
 
     }
 
+    /**
+     * @return array[]
+     *
+     * @psalm-return array<string, array{group: mixed,...}>
+     */
     public function getPermissions(): array
     {
         $routes = $this->router->getRouteCollection();
@@ -31,6 +36,11 @@ final class RoutesPermissionProvider implements RoutesPermissionProviderInterfac
         return $permissions;
     }
 
+    /**
+     * @return (false|mixed|string)[]
+     *
+     * @psalm-return array{group: false|mixed, description: mixed|string}
+     */
     private function getDataFromRoute(string $name, Route $route): array
     {
         $vars = $route->getDefaults()['_sylius']['vars'] ?? [];
