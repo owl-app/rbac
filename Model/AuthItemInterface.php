@@ -10,7 +10,7 @@ interface AuthItemInterface extends ResourceInterface
 {
     public function getName(): string;
 
-    public function setName(string $nazwa): void;
+    public function setName(string $name): void;
 
     public function getType(): string;
 

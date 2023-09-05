@@ -7,7 +7,13 @@ namespace Owl\Component\Rbac\Repository;
 use Doctrine\ORM\QueryBuilder;
 use Sylius\Component\Resource\Repository\RepositoryInterface;
 use Owl\Component\Rbac\Model\AuthItemInterface;
+use Owl\Component\Rbac\Model\PermissionInterface;
 
+/**
+ * @template T of PermissionInterface
+ *
+ * @extends RepositoryInterface<T>
+ */
 interface PermissionRepositoryInterface extends RepositoryInterface
 {
     /**

@@ -7,6 +7,11 @@ namespace Owl\Component\Rbac\Factory;
 use Owl\Component\Rbac\Model\AuthItemInterface;
 use Sylius\Component\Resource\Factory\FactoryInterface;
 
+/**
+ * @template T of AuthItemInterface
+ *
+ * @implements PermissionFactoryInterface<T>
+ */
 class PermissionFactory implements PermissionFactoryInterface
 {
     private FactoryInterface $permissionFactory;

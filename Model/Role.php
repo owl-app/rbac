@@ -20,7 +20,7 @@ class Role extends AuthItem implements RoleInterface
         return 'role';
     }
 
-    protected $permissions;
+    protected Collection $permissions;
 
     public function __construct()
     {
