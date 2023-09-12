@@ -14,5 +14,4 @@ use Owl\Component\Rbac\Model\RoleInterface;
  */
 interface RoleRepositoryInterface extends RepositoryInterface
 {
-
 }
