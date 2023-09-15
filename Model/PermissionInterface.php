@@ -6,5 +6,4 @@ namespace Owl\Component\Rbac\Model;
 
 interface PermissionInterface extends AuthItemInterface
 {
-
 }

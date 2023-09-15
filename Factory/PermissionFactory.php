@@ -29,7 +29,7 @@ class PermissionFactory implements PermissionFactoryInterface
     public function createWithData(
         string $name,
         string $groupPermission,
-        string $description
+        string $description,
     ): AuthItemInterface {
         $permission = $this->createNew();
         $permission->setName($name);

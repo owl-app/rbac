@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Owl\Component\Rbac\Repository;
 
-use Sylius\Component\Resource\Repository\RepositoryInterface;
 use Owl\Component\Rbac\Model\RoleInterface;
+use Sylius\Component\Resource\Repository\RepositoryInterface;
 
 /**
  * @template T of RoleInterface

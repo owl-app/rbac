@@ -11,8 +11,6 @@ use Webmozart\Assert\Assert;
 class Role extends AuthItem implements RoleInterface
 {
     /**
-     * @return string
-     *
      * @psalm-return 'role'
      */
     public function getType(): string

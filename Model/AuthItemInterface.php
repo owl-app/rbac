@@ -14,11 +14,11 @@ interface AuthItemInterface extends ResourceInterface
 
     public function getType(): string;
 
-    public function getGroupPermission():? string;
+    public function getGroupPermission(): ?string;
 
     public function setGroupPermission(string $groupPermission): void;
 
-    public function getDescription():? string;
+    public function getDescription(): ?string;
 
     public function setDescription(string $description): void;
 }

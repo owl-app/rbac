@@ -47,7 +47,7 @@ abstract class BaseAuthItem implements AuthItemInterface
     /**
      * @return string
      */
-    public function getGroupPermission():? string
+    public function getGroupPermission(): ?string
     {
         return $this->groupPermission;
     }
@@ -60,7 +60,7 @@ abstract class BaseAuthItem implements AuthItemInterface
     /**
      * @return string
      */
-    public function getDescription():? string
+    public function getDescription(): ?string
     {
         return $this->description;
     }

@@ -17,6 +17,6 @@ interface PermissionFactoryInterface extends FactoryInterface
     public function createWithData(
         string $name,
         string $groupPermission,
-        string $description
+        string $description,
     ): AuthItemInterface;
 }
